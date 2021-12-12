@@ -34,4 +34,4 @@ if URL.status_code == 200:
         with open("bot_nycwyst1.json", "w") as f:
             json.dump(GAME, f)
 else:
-    logging.error(f" Error : Status Code ==> {URL.status_code}")
+    logging.error(f" Error ==> Status Code ==> {URL.status_code}")
