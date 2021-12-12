@@ -1,5 +1,6 @@
 """ This project takes the clues in rows and column of
 the puzzle on nytimes.com with BeautifulSoup"""
+
 import logging
 import json
 import sys
@@ -28,6 +29,7 @@ if URL.status_code == 200:
             js["group"] = group
             js["number"] = number
             js["string"] = string
+            #print(js)
             GAME.append(js)
         with open("bot_nycwyst1.json", "w") as f:
             json.dump(GAME, f)
